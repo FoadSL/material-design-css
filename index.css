@@ -31,56 +31,46 @@
 @import "./color/text-utilities.css";
 
 /* ============================================
- * Palette Tokens
+ * Palette Tokens & Utilities (tonal palettes)
  * bg-primary-90, text-primary-10, etc.
  * ============================================ */
 @import "./palette/tailwind-theme.css";
+@import "./palette/bg-utilities.css";
+@import "./palette/text-utilities.css";
 
 /* ============================================
- * Shape Tokens
+ * Shape Tokens & Utilities
  * rounded-medium, rounded-large, etc.
  * ============================================ */
 @import "./shape/tailwind-theme.css";
+@import "./shape/shape-utilities.css";
 
 /* ============================================
- * Typography Tokens
+ * Typography Tokens & Utilities
  * font-display-large, text-body-medium, etc.
+ * display-large, body-medium, label-small (shorthand classes)
  * ============================================ */
 @import "./typography/tailwind-theme.css";
-
-/* ============================================
- * Typography Utilities
- * display-large, body-medium, label-small, etc.
- * ============================================ */
 @import "./typography/tailwind-utilities.css";
+@import "./typography/typography-utilities.css";
 
 /* ============================================
- * Motion Tokens
- * ease-emphasized, duration-medium1, etc.
+ * Motion Tokens & Utilities
+ * ease-emphasized, duration-medium1, transition-button, etc.
  * ============================================ */
 @import "./motion/tailwind-theme.css";
-
-/* ============================================
- * Transition Utilities
- * transition-button, transition-emphasized, etc.
- * ============================================ */
 @import "./motion/transition-utilities.css";
-
-/* ============================================
- * Animation Utilities
- * animation-emphasized, animation-standard, etc.
- * ============================================ */
 @import "./motion/animation-utilities.css";
 
 /* ============================================
- * Elevation Tokens
- * elevation-0, elevation-1, elevation-2, etc.
+ * Elevation Tokens & Utilities
+ * elevation-0 through elevation-5, glow-1 through glow-5
  * ============================================ */
 @import "./elevation/tailwind-theme.css";
 @import "./elevation/elevation-utilities.css";
 
 /* ============================================
- * State Layer Tokens
+ * State Layer Tokens & Utilities
  * state-layer-primary, state-layer-on-surface, etc.
  * ============================================ */
 @import "./state-layer/tailwind-theme.css";
@@ -143,3 +133,17 @@
     color: var(--color-on-primary-container);
   }
 }
+
+/* ============================================
+ * Optional Imports (not included by default):
+ *
+ * Color Presets (pick one to override the default palette):
+ *   @import "@vira/material-design-css/prebuild-color/blue.css";
+ *   @import "@vira/material-design-css/prebuild-color/green.css";
+ *   @import "@vira/material-design-css/prebuild-color/pink.css";
+ *   @import "@vira/material-design-css/prebuild-color/yellow.css";
+ *   @import "@vira/material-design-css/prebuild-color/light-green.css";
+ *
+ * Classic (non-Tailwind) Color Utilities:
+ *   @import "@vira/material-design-css/color/classic-utilities.css";
+ * ============================================ */
