@@ -10,10 +10,10 @@
  * - .state-layer-on-surface  (for elements on surface backgrounds)
  * 
  * States automatically applied:
- * - :hover    - 8% opacity overlay
- * - :focus    - 10% opacity overlay  
- * - :active   - 10% opacity overlay (press)
- * - :disabled - 38% opacity for content, 12% for container
+ * - :hover          - 8% opacity overlay
+ * - :focus-visible  - 10% opacity overlay (keyboard navigation only)
+ * - :active         - 10% opacity overlay (press)
+ * - :disabled       - 38% opacity for content, 12% for container
  */
 
 /* Base state layer mixin using ::before pseudo-element */
@@ -152,25 +152,7 @@
   opacity: var(--state-hover-opacity, 0.08);
 }
 
-/* Focus state - 10% opacity */
-.state-layer-primary:focus::before,
-.state-layer-on-primary:focus::before,
-.state-layer-secondary:focus::before,
-.state-layer-on-secondary:focus::before,
-.state-layer-tertiary:focus::before,
-.state-layer-on-tertiary:focus::before,
-.state-layer-error:focus::before,
-.state-layer-on-error:focus::before,
-.state-layer-on-surface:focus::before,
-.state-layer-on-surface-variant:focus::before,
-.state-layer-on-primary-container:focus::before,
-.state-layer-on-secondary-container:focus::before,
-.state-layer-on-tertiary-container:focus::before,
-.state-layer-on-error-container:focus::before {
-  opacity: var(--state-focus-opacity, 0.1);
-}
-
-/* Focus-visible state - 10% opacity */
+/* Focus-visible state - 10% opacity (keyboard navigation only, per MD3 spec) */
 .state-layer-primary:focus-visible::before,
 .state-layer-on-primary:focus-visible::before,
 .state-layer-secondary:focus-visible::before,
@@ -229,9 +211,9 @@
   opacity: var(--state-hover-opacity-high, 0.1);
 }
 
-.state-layer-high.state-layer-primary:focus::before,
-.state-layer-high.state-layer-on-primary:focus::before,
-.state-layer-high.state-layer-on-surface:focus::before,
+.state-layer-high.state-layer-primary:focus-visible::before,
+.state-layer-high.state-layer-on-primary:focus-visible::before,
+.state-layer-high.state-layer-on-surface:focus-visible::before,
 .state-layer-high.state-layer-primary:active::before,
 .state-layer-high.state-layer-on-primary:active::before,
 .state-layer-high.state-layer-on-surface:active::before {
