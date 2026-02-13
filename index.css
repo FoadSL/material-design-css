@@ -87,6 +87,12 @@
 @import "./state-layer/state-layer-utilities.css";
 
 /* ============================================
+ * Z-Index Tokens
+ * z-modal, z-tooltip, z-sticky, z-overlay, etc.
+ * ============================================ */
+@import "./z-index/tailwind-theme.css";
+
+/* ============================================
  * Base Styles
  * ============================================ */
 @layer base {

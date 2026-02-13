@@ -1,0 +1,25 @@
+/**
+ * Material Design 3 Z-Index Tokens for TailwindCSS v4
+ *
+ * Standardized layering scale to prevent z-index wars.
+ * Based on production-tested values from our SCSS design system.
+ *
+ * Configurable via --md-config-z-* variables.
+ * Usage: z-base, z-sticky, z-modal, z-tooltip, etc.
+ */
+
+@theme inline {
+  --z-hide: var(--md-sys-z-hide, -1);
+  --z-base: var(--md-sys-z-base, 0);
+  --z-masked: var(--md-sys-z-masked, 100);
+  --z-mask: var(--md-sys-z-mask, 200);
+  --z-sticky: var(--md-sys-z-sticky, 300);
+  --z-fixed: var(--md-sys-z-fixed, 400);
+  --z-overlay: var(--md-sys-z-overlay, 500);
+  --z-loader: var(--md-sys-z-loader, 600);
+  --z-modal: var(--md-sys-z-modal, 700);
+  --z-dropdown: var(--md-sys-z-dropdown, 800);
+  --z-notification: var(--md-sys-z-notification, 900);
+  --z-tooltip: var(--md-sys-z-tooltip, 950);
+  --z-above-all: var(--md-sys-z-above-all, 1000000);
+}

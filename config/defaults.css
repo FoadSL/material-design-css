@@ -781,5 +781,23 @@
     --md-sys-state-hover-opacity-high: var(--md-config-state-hover-opacity-high, 0.1);
     --md-sys-state-focus-opacity-high: var(--md-config-state-focus-opacity-high, 0.12);
     --md-sys-state-pressed-opacity-high: var(--md-config-state-pressed-opacity-high, 0.12);
+
+    /* ============================================
+     * Z-Index Tokens
+     * Standardized layering scale
+     * ============================================ */
+    --md-sys-z-hide: var(--md-config-z-hide, -1);
+    --md-sys-z-base: var(--md-config-z-base, 0);
+    --md-sys-z-masked: var(--md-config-z-masked, 100);
+    --md-sys-z-mask: var(--md-config-z-mask, 200);
+    --md-sys-z-sticky: var(--md-config-z-sticky, 300);
+    --md-sys-z-fixed: var(--md-config-z-fixed, 400);
+    --md-sys-z-overlay: var(--md-config-z-overlay, 500);
+    --md-sys-z-loader: var(--md-config-z-loader, 600);
+    --md-sys-z-modal: var(--md-config-z-modal, 700);
+    --md-sys-z-dropdown: var(--md-config-z-dropdown, 800);
+    --md-sys-z-notification: var(--md-config-z-notification, 900);
+    --md-sys-z-tooltip: var(--md-config-z-tooltip, 950);
+    --md-sys-z-above-all: var(--md-config-z-above-all, 1000000);
   }
 }
