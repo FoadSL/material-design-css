@@ -123,6 +123,58 @@
    * Add .light or .dark class to override manually.
    */
 
+  /* RTL-ready defaults: use logical text alignment
+   * Resolves to "left" for LTR, "right" for RTL automatically */
+  :root {
+    text-align: start;
+  }
+
+  /* RTL font overrides for Persian and Arabic
+   *
+   * Fallback chain (per-language → shared RTL → global → default):
+   *   :lang(fa): --md-config-typeface-brand-fa → -brand-rtl → -brand → "Roboto"
+   *   :lang(ar): --md-config-typeface-brand-ar → -brand-rtl → -brand → "Roboto"
+   *
+   * Single RTL language (shared font):
+   *   :root {
+   *     --md-config-typeface-brand-rtl: "Yekan Bakh", sans-serif;
+   *     --md-config-typeface-plain-rtl: "Vazirmatn", sans-serif;
+   *   }
+   *
+   * Separate fonts per language:
+   *   :root {
+   *     --md-config-typeface-brand-fa: "Yekan Bakh", sans-serif;
+   *     --md-config-typeface-plain-fa: "Vazirmatn", sans-serif;
+   *     --md-config-typeface-brand-ar: "Noto Sans Arabic", sans-serif;
+   *     --md-config-typeface-plain-ar: "Noto Sans Arabic", sans-serif;
+   *   }
+   */
+  :root:lang(fa) {
+    --md-ref-typeface-brand: var(
+      --md-config-typeface-brand-fa,
+      var(--md-config-typeface-brand-rtl,
+        var(--md-config-typeface-brand, "Roboto", sans-serif))
+    );
+    --md-ref-typeface-plain: var(
+      --md-config-typeface-plain-fa,
+      var(--md-config-typeface-plain-rtl,
+        var(--md-config-typeface-plain, "Roboto", sans-serif))
+    );
+  }
+
+  :root:lang(ar) {
+    --md-ref-typeface-brand: var(
+      --md-config-typeface-brand-ar,
+      var(--md-config-typeface-brand-rtl,
+        var(--md-config-typeface-brand, "Roboto", sans-serif))
+    );
+    --md-ref-typeface-plain: var(
+      --md-config-typeface-plain-ar,
+      var(--md-config-typeface-plain-rtl,
+        var(--md-config-typeface-plain, "Roboto", sans-serif))
+    );
+  }
+
   * {
     @apply border-outline;
   }
