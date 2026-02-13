@@ -1,105 +1,107 @@
 /**
  * Typography Utility Classes (Standalone CSS)
  * Usage: display-large, headline-medium, body-small, label-large, etc.
+ *
+ * Note: Fallback values here MUST match config/defaults.css.
  */
 
 /* Display */
 .display-large {
   font-family: var(--font-display-large, "Roboto", sans-serif);
   font-size: var(--text-display-large, 57px);
-  letter-spacing: var(--tracking-display-large, -0.25px);
+  letter-spacing: var(--tracking-display-large, -1px);
   line-height: var(--leading-display-large, 64px);
-  font-weight: var(--font-weight-display-large, 400);
+  font-weight: var(--font-weight-display-large, 875);
 }
 
 .display-medium {
   font-family: var(--font-display-medium, "Roboto", sans-serif);
   font-size: var(--text-display-medium, 45px);
-  letter-spacing: var(--tracking-display-medium, 0px);
+  letter-spacing: var(--tracking-display-medium, -1px);
   line-height: var(--leading-display-medium, 52px);
-  font-weight: var(--font-weight-display-medium, 400);
+  font-weight: var(--font-weight-display-medium, 900);
 }
 
 .display-small {
   font-family: var(--font-display-small, "Roboto", sans-serif);
   font-size: var(--text-display-small, 36px);
-  letter-spacing: var(--tracking-display-small, 0px);
+  letter-spacing: var(--tracking-display-small, -1px);
   line-height: var(--leading-display-small, 44px);
-  font-weight: var(--font-weight-display-small, 400);
+  font-weight: var(--font-weight-display-small, 800);
 }
 
 /* Headline */
 .headline-large {
   font-family: var(--font-headline-large, "Roboto", sans-serif);
   font-size: var(--text-headline-large, 32px);
-  letter-spacing: var(--tracking-headline-large, 0px);
-  line-height: var(--leading-headline-large, 40px);
-  font-weight: var(--font-weight-headline-large, 400);
+  letter-spacing: var(--tracking-headline-large, -1.5px);
+  line-height: var(--leading-headline-large, 28px);
+  font-weight: var(--font-weight-headline-large, 700);
 }
 
 .headline-medium {
   font-family: var(--font-headline-medium, "Roboto", sans-serif);
   font-size: var(--text-headline-medium, 28px);
-  letter-spacing: var(--tracking-headline-medium, 0px);
+  letter-spacing: var(--tracking-headline-medium, -1px);
   line-height: var(--leading-headline-medium, 36px);
-  font-weight: var(--font-weight-headline-medium, 400);
+  font-weight: var(--font-weight-headline-medium, 700);
 }
 
 .headline-small {
   font-family: var(--font-headline-small, "Roboto", sans-serif);
   font-size: var(--text-headline-small, 24px);
-  letter-spacing: var(--tracking-headline-small, 0px);
+  letter-spacing: var(--tracking-headline-small, -0.5px);
   line-height: var(--leading-headline-small, 32px);
-  font-weight: var(--font-weight-headline-small, 400);
+  font-weight: var(--font-weight-headline-small, 800);
 }
 
 /* Title */
 .title-large {
   font-family: var(--font-title-large, "Roboto", sans-serif);
-  font-size: var(--text-title-large, 22px);
-  letter-spacing: var(--tracking-title-large, 0px);
+  font-size: var(--text-title-large, 20px);
+  letter-spacing: var(--tracking-title-large, -0.5px);
   line-height: var(--leading-title-large, 28px);
-  font-weight: var(--font-weight-title-large, 400);
+  font-weight: var(--font-weight-title-large, 700);
 }
 
 .title-medium {
   font-family: var(--font-title-medium, "Roboto", sans-serif);
   font-size: var(--text-title-medium, 16px);
-  letter-spacing: var(--tracking-title-medium, 0.15px);
+  letter-spacing: var(--tracking-title-medium, 0.4px);
   line-height: var(--leading-title-medium, 24px);
-  font-weight: var(--font-weight-title-medium, 500);
+  font-weight: var(--font-weight-title-medium, 600);
 }
 
 .title-small {
   font-family: var(--font-title-small, "Roboto", sans-serif);
   font-size: var(--text-title-small, 14px);
-  letter-spacing: var(--tracking-title-small, 0.1px);
+  letter-spacing: var(--tracking-title-small, -0.4px);
   line-height: var(--leading-title-small, 20px);
-  font-weight: var(--font-weight-title-small, 500);
+  font-weight: var(--font-weight-title-small, 600);
 }
 
 /* Body */
 .body-large {
   font-family: var(--font-body-large, "Roboto", sans-serif);
   font-size: var(--text-body-large, 16px);
-  letter-spacing: var(--tracking-body-large, 0.5px);
-  line-height: var(--leading-body-large, 24px);
+  letter-spacing: var(--tracking-body-large, 0px);
+  line-height: var(--leading-body-large, 32px);
   font-weight: var(--font-weight-body-large, 400);
 }
 
 .body-medium {
   font-family: var(--font-body-medium, "Roboto", sans-serif);
   font-size: var(--text-body-medium, 14px);
-  letter-spacing: var(--tracking-body-medium, 0.25px);
-  line-height: var(--leading-body-medium, 20px);
+  letter-spacing: var(--tracking-body-medium, 0px);
+  line-height: var(--leading-body-medium, 28px);
   font-weight: var(--font-weight-body-medium, 400);
 }
 
 .body-small {
   font-family: var(--font-body-small, "Roboto", sans-serif);
   font-size: var(--text-body-small, 12px);
-  letter-spacing: var(--tracking-body-small, 0.4px);
-  line-height: var(--leading-body-small, 16px);
+  letter-spacing: var(--tracking-body-small, -0.2px);
+  line-height: var(--leading-body-small, 20px);
   font-weight: var(--font-weight-body-small, 400);
 }
 
@@ -107,23 +109,23 @@
 .label-large {
   font-family: var(--font-label-large, "Roboto", sans-serif);
   font-size: var(--text-label-large, 14px);
-  letter-spacing: var(--tracking-label-large, 0.1px);
+  letter-spacing: var(--tracking-label-large, 0px);
   line-height: var(--leading-label-large, 20px);
-  font-weight: var(--font-weight-label-large, 500);
+  font-weight: var(--font-weight-label-large, 600);
 }
 
 .label-medium {
   font-family: var(--font-label-medium, "Roboto", sans-serif);
   font-size: var(--text-label-medium, 12px);
-  letter-spacing: var(--tracking-label-medium, 0.5px);
+  letter-spacing: var(--tracking-label-medium, 0px);
   line-height: var(--leading-label-medium, 16px);
-  font-weight: var(--font-weight-label-medium, 500);
+  font-weight: var(--font-weight-label-medium, 600);
 }
 
 .label-small {
   font-family: var(--font-label-small, "Roboto", sans-serif);
   font-size: var(--text-label-small, 11px);
-  letter-spacing: var(--tracking-label-small, 0.5px);
+  letter-spacing: var(--tracking-label-small, 0px);
   line-height: var(--leading-label-small, 16px);
-  font-weight: var(--font-weight-label-small, 500);
+  font-weight: var(--font-weight-label-small, 600);
 }
