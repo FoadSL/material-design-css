@@ -106,6 +106,12 @@
 @import "./stroke/tailwind-theme.css";
 
 /* ============================================
+ * Component Size Tokens
+ * size-component-medium, w-component-large, h-component-x-small, etc.
+ * ============================================ */
+@import "./size/tailwind-theme.css";
+
+/* ============================================
  * Base Styles
  * ============================================ */
 @layer base {

@@ -1,0 +1,47 @@
+/**
+ * Material Design 3 Component Size Tokens for TailwindCSS v4
+ *
+ * Standardized sizing scale for fixed-dimension elements
+ * (icons, avatars, buttons, touch targets, etc.)
+ * Based on production SCSS design system's 9-level scale.
+ *
+ * Configurable via --md-config-size-* variables.
+ *
+ * Usage with Tailwind's size-* utility (sets width + height):
+ *   size-component-3x-small (16x16), size-component-medium (32x32), etc.
+ *
+ * Usage with individual dimensions:
+ *   w-component-large h-component-large (40x40)
+ */
+
+@theme inline {
+  --size-component-3x-small: var(--md-sys-size-3x-small, 16px);
+  --size-component-2x-small: var(--md-sys-size-2x-small, 20px);
+  --size-component-x-small: var(--md-sys-size-x-small, 24px);
+  --size-component-small: var(--md-sys-size-small, 28px);
+  --size-component-medium: var(--md-sys-size-medium, 32px);
+  --size-component-large: var(--md-sys-size-large, 40px);
+  --size-component-x-large: var(--md-sys-size-x-large, 48px);
+  --size-component-2x-large: var(--md-sys-size-2x-large, 56px);
+  --size-component-3x-large: var(--md-sys-size-3x-large, 64px);
+
+  --width-component-3x-small: var(--md-sys-size-3x-small, 16px);
+  --width-component-2x-small: var(--md-sys-size-2x-small, 20px);
+  --width-component-x-small: var(--md-sys-size-x-small, 24px);
+  --width-component-small: var(--md-sys-size-small, 28px);
+  --width-component-medium: var(--md-sys-size-medium, 32px);
+  --width-component-large: var(--md-sys-size-large, 40px);
+  --width-component-x-large: var(--md-sys-size-x-large, 48px);
+  --width-component-2x-large: var(--md-sys-size-2x-large, 56px);
+  --width-component-3x-large: var(--md-sys-size-3x-large, 64px);
+
+  --height-component-3x-small: var(--md-sys-size-3x-small, 16px);
+  --height-component-2x-small: var(--md-sys-size-2x-small, 20px);
+  --height-component-x-small: var(--md-sys-size-x-small, 24px);
+  --height-component-small: var(--md-sys-size-small, 28px);
+  --height-component-medium: var(--md-sys-size-medium, 32px);
+  --height-component-large: var(--md-sys-size-large, 40px);
+  --height-component-x-large: var(--md-sys-size-x-large, 48px);
+  --height-component-2x-large: var(--md-sys-size-2x-large, 56px);
+  --height-component-3x-large: var(--md-sys-size-3x-large, 64px);
+}

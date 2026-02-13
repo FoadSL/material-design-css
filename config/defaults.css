@@ -815,5 +815,19 @@
     --md-sys-stroke-medium: var(--md-config-stroke-medium, 2px);
     --md-sys-stroke-thick: var(--md-config-stroke-thick, 4px);
     --md-sys-stroke-heavy: var(--md-config-stroke-heavy, 10px);
+
+    /* ============================================
+     * Component Size Tokens
+     * Standardized sizing scale for fixed-dimension elements
+     * ============================================ */
+    --md-sys-size-3x-small: var(--md-config-size-3x-small, 16px);
+    --md-sys-size-2x-small: var(--md-config-size-2x-small, 20px);
+    --md-sys-size-x-small: var(--md-config-size-x-small, 24px);
+    --md-sys-size-small: var(--md-config-size-small, 28px);
+    --md-sys-size-medium: var(--md-config-size-medium, 32px);
+    --md-sys-size-large: var(--md-config-size-large, 40px);
+    --md-sys-size-x-large: var(--md-config-size-x-large, 48px);
+    --md-sys-size-2x-large: var(--md-config-size-2x-large, 56px);
+    --md-sys-size-3x-large: var(--md-config-size-3x-large, 64px);
   }
 }
