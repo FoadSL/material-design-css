@@ -1,6 +1,6 @@
 /**
  * Material Design 3 Elevation Tokens for TailwindCSS v4
- * 
+ *
  * MD3 defines 6 elevation levels (0-5) with specific shadow values.
  * Each level corresponds to a specific dp (density-independent pixel) value:
  * - Level 0: 0dp (no shadow)
@@ -9,46 +9,63 @@
  * - Level 3: 6dp
  * - Level 4: 8dp
  * - Level 5: 12dp
- * 
- * Configurable via --md-config-elevation-* variables.
+ *
+ * Glow variants provide an alternative for dark surfaces where traditional
+ * shadows are invisible. Based on the SCSS system's elevation-glow pattern.
+ * Uses the --color-glow token (#476beb by default) at varying opacities.
+ *
+ * Configurable via --md-config-elevation-* and --md-config-glow-* variables.
+ * Usage: shadow-elevation-2, shadow-glow-3, etc.
  */
 
 @theme inline {
-  /* Elevation Level 0 - No shadow */
+  /* Shadow Elevation (for light surfaces) */
   --shadow-elevation-0: var(--md-sys-elevation-level0, none);
-
-  /* Elevation Level 1 - 1dp */
   --shadow-elevation-1: var(
     --md-sys-elevation-level1,
     0px 1px 2px 0px rgba(0, 0, 0, 0.3),
     0px 1px 3px 1px rgba(0, 0, 0, 0.15)
   );
-
-  /* Elevation Level 2 - 3dp */
   --shadow-elevation-2: var(
     --md-sys-elevation-level2,
     0px 1px 2px 0px rgba(0, 0, 0, 0.3),
     0px 2px 6px 2px rgba(0, 0, 0, 0.15)
   );
-
-  /* Elevation Level 3 - 6dp */
   --shadow-elevation-3: var(
     --md-sys-elevation-level3,
     0px 1px 3px 0px rgba(0, 0, 0, 0.3),
     0px 4px 8px 3px rgba(0, 0, 0, 0.15)
   );
-
-  /* Elevation Level 4 - 8dp */
   --shadow-elevation-4: var(
     --md-sys-elevation-level4,
     0px 2px 3px 0px rgba(0, 0, 0, 0.3),
     0px 6px 10px 4px rgba(0, 0, 0, 0.15)
   );
-
-  /* Elevation Level 5 - 12dp */
   --shadow-elevation-5: var(
     --md-sys-elevation-level5,
     0px 4px 4px 0px rgba(0, 0, 0, 0.3),
     0px 8px 12px 6px rgba(0, 0, 0, 0.15)
+  );
+
+  /* Glow Elevation (for dark surfaces or accent elements) */
+  --shadow-glow-1: var(
+    --md-sys-glow-level1,
+    0px 0px 4px 0px rgba(71, 107, 235, 0.2)
+  );
+  --shadow-glow-2: var(
+    --md-sys-glow-level2,
+    0px 0px 8px 0px rgba(71, 107, 235, 0.25)
+  );
+  --shadow-glow-3: var(
+    --md-sys-glow-level3,
+    0px 0px 16px 0px rgba(71, 107, 235, 0.3)
+  );
+  --shadow-glow-4: var(
+    --md-sys-glow-level4,
+    0px 0px 24px 0px rgba(71, 107, 235, 0.35)
+  );
+  --shadow-glow-5: var(
+    --md-sys-glow-level5,
+    0px 0px 32px 2px rgba(71, 107, 235, 0.4)
   );
 }

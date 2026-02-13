@@ -1,28 +1,18 @@
 /**
  * Material Design 3 Elevation Utility Classes
- * 
- * Usage: elevation-0, elevation-1, elevation-2, etc.
- * 
+ *
+ * Shadow utilities: elevation-0 through elevation-5
+ * Glow utilities:   glow-1 through glow-5 (for dark surfaces)
+ * Hover variants:   elevation-hover-1 through elevation-hover-5
+ * Active variants:  elevation-active-0 through elevation-active-2
+ *
  * MD3 Elevation Levels:
  * - Level 0: 0dp (flat, no shadow)
- * - Level 1: 1dp (subtle shadow)
- * - Level 2: 3dp (low shadow)
- * - Level 3: 6dp (medium shadow)
- * - Level 4: 8dp (high shadow)
- * - Level 5: 12dp (highest shadow)
- */
-/**
- * Material Design 3 Elevation Utility Classes
- * 
- * Usage: elevation-0, elevation-1, elevation-2, etc.
- * 
- * MD3 Elevation Levels:
- * - Level 0: 0dp (flat, no shadow)
- * - Level 1: 1dp (subtle shadow)
- * - Level 2: 3dp (low shadow)
- * - Level 3: 6dp (medium shadow)
- * - Level 4: 8dp (high shadow)
- * - Level 5: 12dp (highest shadow)
+ * - Level 1: 1dp (subtle shadow / faint glow)
+ * - Level 2: 3dp (low shadow / soft glow)
+ * - Level 3: 6dp (medium shadow / medium glow)
+ * - Level 4: 8dp (high shadow / strong glow)
+ * - Level 5: 12dp (highest shadow / intense glow)
  */
 
 /* Elevation utilities (TailwindCSS v4 @utility) */
@@ -118,4 +108,25 @@
   @variant active {
     box-shadow: var(--shadow-elevation-2);
   }
+}
+
+/* Glow utilities (for dark surfaces or accent elements) */
+@utility glow-1 {
+  box-shadow: var(--shadow-glow-1);
+}
+
+@utility glow-2 {
+  box-shadow: var(--shadow-glow-2);
+}
+
+@utility glow-3 {
+  box-shadow: var(--shadow-glow-3);
+}
+
+@utility glow-4 {
+  box-shadow: var(--shadow-glow-4);
+}
+
+@utility glow-5 {
+  box-shadow: var(--shadow-glow-5);
 }

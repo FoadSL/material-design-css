@@ -765,6 +765,28 @@
       0px 8px 12px 6px rgba(0, 0, 0, 0.15)
     );
 
+    /* Glow Elevation (for dark surfaces / accent elements) */
+    --md-sys-glow-level1: var(
+      --md-config-glow-level1,
+      0px 0px 4px 0px rgba(71, 107, 235, 0.2)
+    );
+    --md-sys-glow-level2: var(
+      --md-config-glow-level2,
+      0px 0px 8px 0px rgba(71, 107, 235, 0.25)
+    );
+    --md-sys-glow-level3: var(
+      --md-config-glow-level3,
+      0px 0px 16px 0px rgba(71, 107, 235, 0.3)
+    );
+    --md-sys-glow-level4: var(
+      --md-config-glow-level4,
+      0px 0px 24px 0px rgba(71, 107, 235, 0.35)
+    );
+    --md-sys-glow-level5: var(
+      --md-config-glow-level5,
+      0px 0px 32px 2px rgba(71, 107, 235, 0.4)
+    );
+
     /* ============================================
      * State Layer Tokens
      * MD3 State Opacity Values
