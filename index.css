@@ -132,6 +132,20 @@
     background-color: var(--color-primary-container);
     color: var(--color-on-primary-container);
   }
+
+  /* Reduced motion: disable all transitions and animations
+   * Required by WCAG 2.1 SC 2.3.3
+   * Ported from production SCSS design system */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 /* ============================================
