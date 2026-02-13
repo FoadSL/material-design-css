@@ -799,5 +799,11 @@
     --md-sys-z-notification: var(--md-config-z-notification, 900);
     --md-sys-z-tooltip: var(--md-config-z-tooltip, 950);
     --md-sys-z-above-all: var(--md-config-z-above-all, 1000000);
+
+    /* ============================================
+     * Spacing Tokens
+     * MD3 4px grid base unit
+     * ============================================ */
+    --md-sys-spacing-unit: var(--md-config-spacing-unit, 4px);
   }
 }

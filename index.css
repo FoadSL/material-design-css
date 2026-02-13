@@ -93,6 +93,13 @@
 @import "./z-index/tailwind-theme.css";
 
 /* ============================================
+ * Spacing Tokens
+ * Overrides Tailwind spacing base to MD3 4px grid.
+ * p-1 (4px), m-2 (8px), gap-4 (16px), etc.
+ * ============================================ */
+@import "./spacing/tailwind-theme.css";
+
+/* ============================================
  * Base Styles
  * ============================================ */
 @layer base {

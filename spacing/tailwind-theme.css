@@ -1,0 +1,22 @@
+/**
+ * Material Design 3 Spacing Tokens for TailwindCSS v4
+ *
+ * Overrides Tailwind's default spacing base to align with MD3's 4px grid.
+ * All native Tailwind spacing utilities (p-*, m-*, gap-*, w-*, h-*, etc.)
+ * automatically use this base unit as their multiplier.
+ *
+ * Configurable via --md-config-spacing-unit.
+ *
+ * Scale examples (base = 4px):
+ *   p-1  =  4px    m-2  =  8px    gap-3  = 12px
+ *   p-4  = 16px    m-5  = 20px    gap-6  = 24px
+ *   p-8  = 32px    m-10 = 40px    gap-12 = 48px
+ *   p-16 = 64px    m-20 = 80px    gap-24 = 96px
+ *
+ * Override for a specific brand/product:
+ *   :root { --md-config-spacing-unit: 8px; }
+ */
+
+@theme {
+  --spacing: var(--md-sys-spacing-unit, 4px);
+}
