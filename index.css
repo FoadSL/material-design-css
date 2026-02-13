@@ -108,6 +108,12 @@
 @import "./utilities/scrollbar.css";
 
 /* ============================================
+ * Content Visibility Utilities (Performance)
+ * content-auto, content-hidden, content-visible
+ * ============================================ */
+@import "./utilities/content-visibility.css";
+
+/* ============================================
  * Base Styles
  * ============================================ */
 @layer base {

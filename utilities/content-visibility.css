@@ -1,0 +1,47 @@
+/**
+ * Content Visibility Utilities
+ *
+ * Provides CSS `content-visibility` utilities for rendering performance
+ * optimization. When a page has many MD3 components (each with custom
+ * properties, state layers, elevation), rendering cost grows quickly.
+ *
+ * `content-visibility: auto` tells the browser to skip rendering for
+ * off-screen elements, dramatically reducing initial paint time and
+ * memory usage in long scrollable pages.
+ *
+ * IMPORTANT: Always pair `content-auto` with `contain-intrinsic-size`
+ * (or the longhand `contain-intrinsic-block-size`) to give the browser
+ * an estimated height. Without it, off-screen elements collapse to 0px
+ * and the scrollbar will jump as the user scrolls.
+ *
+ * Usage:
+ *
+ *   <!-- Lazy-render a heavy card list section -->
+ *   <section class="content-auto" style="contain-intrinsic-size: auto 500px">
+ *     <!-- many MD3 cards with elevation, state layers, palette... -->
+ *   </section>
+ *
+ *   <!-- Hide an element while preserving its rendering state (faster than display:none toggle) -->
+ *   <div class="content-hidden">
+ *     <!-- offscreen panel content -->
+ *   </div>
+ *
+ * Browser support: Chrome 85+, Edge 85+, Firefox 125+, Safari 18+.
+ * Falls back gracefully — unsupported browsers simply render everything
+ * as normal (no visual breakage).
+ */
+
+/* Auto: skip rendering for off-screen elements */
+@utility content-auto {
+  content-visibility: auto;
+}
+
+/* Hidden: hide content while preserving render state (cheaper than display:none for toggle) */
+@utility content-hidden {
+  content-visibility: hidden;
+}
+
+/* Visible: explicit default — useful for overriding content-hidden/content-auto responsively */
+@utility content-visible {
+  content-visibility: visible;
+}
