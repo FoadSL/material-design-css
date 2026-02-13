@@ -199,11 +199,6 @@
   pointer-events: none;
 }
 
-/* Dragged state - 16% opacity */
-.state-dragged::before {
-  opacity: var(--state-dragged-opacity, 0.16) !important;
-}
-
 /* High emphasis state layers (for more prominent feedback) */
 .state-layer-high.state-layer-primary:hover::before,
 .state-layer-high.state-layer-on-primary:hover::before,
@@ -218,4 +213,16 @@
 .state-layer-high.state-layer-on-primary:active::before,
 .state-layer-high.state-layer-on-surface:active::before {
   opacity: var(--state-focus-opacity-high, 0.12);
+}
+
+/* Dragged state - 16% opacity
+ * Per MD3 spec, the dragged state takes precedence over all other
+ * interactive states (hover, focus, active).
+ * Doubled class selector provides sufficient specificity without !important.
+ * - .state-dragged.state-dragged::before → (0,2,1) beats standard states by source order
+ * - .state-layer-high.state-dragged.state-dragged::before → (0,3,1) beats high-emphasis
+ * MUST remain last in this file to win ties by source order. */
+.state-dragged.state-dragged::before,
+.state-layer-high.state-dragged.state-dragged::before {
+  opacity: var(--state-dragged-opacity, 0.16);
 }
