@@ -133,6 +133,52 @@
     color: var(--color-on-primary-container);
   }
 
+  /* ---- Extended Reset (beyond Tailwind preflight) ---- */
+
+  /* Form controls: normalize dialog (not covered by Tailwind) */
+  dialog {
+    font: inherit;
+  }
+
+  /* Autofill styling: use design system colors instead of browser defaults */
+  input:-webkit-autofill,
+  button:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    background-clip: text;
+    -webkit-text-fill-color: var(--color-on-surface, #191919);
+  }
+
+  /* Number input: remove browser spinner controls */
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  /* Smooth scrolling (respects reduced-motion via the rule below) */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  /* Media elements: ensure block display */
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Labels: inherit cursor from parent (clickable when wrapping inputs) */
+  label {
+    cursor: inherit;
+  }
+
   /* Reduced motion: disable all transitions and animations
    * Required by WCAG 2.1 SC 2.3.3
    * Ported from production SCSS design system */
