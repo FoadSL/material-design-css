@@ -28,53 +28,53 @@
   );
 
   /* Expressive Easings */
-  --easing-expressive-fast-spatial: var(
+  --ease-expressive-fast-spatial: var(
     --md-sys-motion-easing-expressive-fast-spatial,
     cubic-bezier(0.42, 1.67, 0.21, 0.9)
   );
-  --easing-expressive-default-spatial: var(
+  --ease-expressive-default-spatial: var(
     --md-sys-motion-easing-expressive-default-spatial,
     cubic-bezier(0.38, 1.21, 0.22, 1)
   );
-  --easing-expressive-slow-spatial: var(
+  --ease-expressive-slow-spatial: var(
     --md-sys-motion-easing-expressive-slow-spatial,
     cubic-bezier(0.39, 1.29, 0.35, 0.98)
   );
-  --easing-expressive-fast-effects: var(
+  --ease-expressive-fast-effects: var(
     --md-sys-motion-easing-expressive-fast-effects,
     cubic-bezier(0.31, 0.94, 0.34, 1)
   );
-  --easing-expressive-default-effects: var(
+  --ease-expressive-default-effects: var(
     --md-sys-motion-easing-expressive-default-effects,
     cubic-bezier(0.34, 0.8, 0.34, 1)
   );
-  --easing-expressive-slow-effects: var(
+  --ease-expressive-slow-effects: var(
     --md-sys-motion-easing-expressive-slow-effects,
     cubic-bezier(0.34, 0.88, 0.34, 1)
   );
 
   /* Standard Spatial/Effects */
-  --easing-standard-fast-spatial: var(
+  --ease-standard-fast-spatial: var(
     --md-sys-motion-easing-standard-fast-spatial,
     cubic-bezier(0.27, 1.06, 0.18, 1)
   );
-  --easing-standard-default-spatial: var(
+  --ease-standard-default-spatial: var(
     --md-sys-motion-easing-standard-default-spatial,
     cubic-bezier(0.27, 1.06, 0.18, 1)
   );
-  --easing-standard-slow-spatial: var(
+  --ease-standard-slow-spatial: var(
     --md-sys-motion-easing-standard-slow-spatial,
     cubic-bezier(0.27, 1.06, 0.18, 1)
   );
-  --easing-standard-fast-effects: var(
+  --ease-standard-fast-effects: var(
     --md-sys-motion-easing-standard-fast-effects,
     cubic-bezier(0.31, 0.94, 0.34, 1)
   );
-  --easing-standard-default-effects: var(
+  --ease-standard-default-effects: var(
     --md-sys-motion-easing-standard-default-effects,
     cubic-bezier(0.34, 0.8, 0.34, 1)
   );
-  --easing-standard-slow-effects: var(
+  --ease-standard-slow-effects: var(
     --md-sys-motion-easing-standard-slow-effects,
     cubic-bezier(0.34, 0.88, 0.34, 1)
   );
