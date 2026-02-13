@@ -1,0 +1,71 @@
+/**
+ * CSS @property Registration
+ *
+ * Registers custom properties with the browser so they can be
+ * smoothly animated/transitioned and have type-checked initial values.
+ *
+ * Without @property, CSS custom properties are treated as discrete values
+ * by the browser — they "jump" instead of smoothly interpolating.
+ * Registration enables smooth transitions for opacity, color, and other
+ * properties used in state layers and interactive states.
+ *
+ * Browser support: Chrome 85+, Safari 15.4+, Firefox 128+.
+ * Falls back gracefully — unregistered properties still work, just without
+ * smooth animation between values.
+ */
+
+/* State layer opacity registration for smooth transitions */
+@property --state-hover-opacity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.08;
+}
+
+@property --state-focus-opacity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.1;
+}
+
+@property --state-pressed-opacity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.1;
+}
+
+@property --state-dragged-opacity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.16;
+}
+
+@property --state-disabled-opacity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.38;
+}
+
+@property --state-disabled-container-opacity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.12;
+}
+
+/* High emphasis state opacities */
+@property --state-hover-opacity-high {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.1;
+}
+
+@property --state-focus-opacity-high {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.12;
+}
+
+@property --state-pressed-opacity-high {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.12;
+}
