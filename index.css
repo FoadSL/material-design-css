@@ -90,14 +90,11 @@
  * Base Styles
  * ============================================ */
 @layer base {
-  :root:not(.dark) {
-    color-scheme: light;
-  }
-
-  :root.dark,
-  .dark {
-    color-scheme: dark;
-  }
+  /*
+   * Note: color-scheme is handled by the resolver (config/resolver.css).
+   * :root defaults to "light dark" (respects OS preference).
+   * Add .light or .dark class to override manually.
+   */
 
   * {
     @apply border-outline;
