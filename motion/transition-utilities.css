@@ -2,145 +2,148 @@
  * Transition Utility Classes for TailwindCSS v4
  * Using @utility directive for proper Tailwind integration
  *
+ * IMPORTANT: Each utility specifies explicit transition properties for performance.
+ * Using transition-property: all causes browsers to monitor every CSS property on
+ * every frame — causing jank and unintended transitions in production UIs.
+ *
+ * Property categories:
+ *   - Spatial transitions → transform, opacity (movement/position changes)
+ *   - Effects transitions → background-color, color, border-color, opacity (visual changes)
+ *   - General transitions → both spatial + effects + box-shadow (interactive elements)
+ *
  * All easing tokens use the --ease-* prefix consistently.
- * Class names follow the pattern: transition-{easing-name}
  */
 
 /* Button Transition - Emphasized + Short3 (Material Design 3 Standard) */
 @utility transition-button {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-emphasized);
   transition-duration: var(--duration-short3, 150ms);
 }
 
-/* Base Easing Transitions */
-@utility transition-emphasized {
-  transition-property: all;
+/* Semantic Transitions */
+@utility transition-interactive {
+  transition-property: background-color, color, border-color, box-shadow, opacity;
+  transition-timing-function: var(--ease-standard);
+  transition-duration: var(--duration-short4, 200ms);
+}
 
+@utility transition-motion {
+  transition-property: transform, opacity;
+  transition-timing-function: var(--ease-emphasized);
+  transition-duration: var(--duration-medium2, 300ms);
+}
+
+/* Emphasized Easing Transitions */
+@utility transition-emphasized {
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-emphasized);
   transition-duration: var(--duration-medium2, 300ms);
 }
 
 @utility transition-emphasized-decelerate {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-emphasized-decelerate);
   transition-duration: var(--duration-medium2, 300ms);
 }
 
 @utility transition-emphasized-accelerate {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-emphasized-accelerate);
   transition-duration: var(--duration-medium2, 300ms);
 }
 
+/* Standard Easing Transitions */
 @utility transition-standard {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-standard);
   transition-duration: var(--duration-short4, 200ms);
 }
 
 @utility transition-standard-decelerate {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-standard-decelerate);
   transition-duration: var(--duration-short4, 200ms);
 }
 
 @utility transition-standard-accelerate {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform;
   transition-timing-function: var(--ease-standard-accelerate);
   transition-duration: var(--duration-short4, 200ms);
 }
 
 /* Expressive Spatial Transitions */
 @utility transition-expressive-fast-spatial {
-  transition-property: all;
-
+  transition-property: transform, opacity;
   transition-timing-function: var(--ease-expressive-fast-spatial);
   transition-duration: var(--duration-expressive-fast-spatial, 350ms);
 }
 
 @utility transition-expressive-default-spatial {
-  transition-property: all;
-
+  transition-property: transform, opacity;
   transition-timing-function: var(--ease-expressive-default-spatial);
   transition-duration: var(--duration-expressive-default-spatial, 500ms);
 }
 
 @utility transition-expressive-slow-spatial {
-  transition-property: all;
-
+  transition-property: transform, opacity;
   transition-timing-function: var(--ease-expressive-slow-spatial);
   transition-duration: var(--duration-expressive-slow-spatial, 650ms);
 }
 
 /* Expressive Effects Transitions */
 @utility transition-expressive-fast-effects {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, opacity;
   transition-timing-function: var(--ease-expressive-fast-effects);
   transition-duration: var(--duration-expressive-fast-effects, 150ms);
 }
 
 @utility transition-expressive-default-effects {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, opacity;
   transition-timing-function: var(--ease-expressive-default-effects);
   transition-duration: var(--duration-expressive-default-effects, 200ms);
 }
 
 @utility transition-expressive-slow-effects {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, opacity;
   transition-timing-function: var(--ease-expressive-slow-effects);
   transition-duration: var(--duration-expressive-slow-effects, 300ms);
 }
 
 /* Standard Spatial Transitions */
 @utility transition-standard-fast-spatial {
-  transition-property: all;
-
+  transition-property: transform, opacity;
   transition-timing-function: var(--ease-standard-fast-spatial);
   transition-duration: var(--duration-standard-fast-spatial, 350ms);
 }
 
 @utility transition-standard-default-spatial {
-  transition-property: all;
-
+  transition-property: transform, opacity;
   transition-timing-function: var(--ease-standard-default-spatial);
   transition-duration: var(--duration-standard-default-spatial, 500ms);
 }
 
 @utility transition-standard-slow-spatial {
-  transition-property: all;
-
+  transition-property: transform, opacity;
   transition-timing-function: var(--ease-standard-slow-spatial);
   transition-duration: var(--duration-standard-slow-spatial, 750ms);
 }
 
 /* Standard Effects Transitions */
 @utility transition-standard-fast-effects {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, opacity;
   transition-timing-function: var(--ease-standard-fast-effects);
   transition-duration: var(--duration-standard-fast-effects, 150ms);
 }
 
 @utility transition-standard-default-effects {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, opacity;
   transition-timing-function: var(--ease-standard-default-effects);
   transition-duration: var(--duration-standard-default-effects, 200ms);
 }
 
 @utility transition-standard-slow-effects {
-  transition-property: all;
-
+  transition-property: background-color, color, border-color, opacity;
   transition-timing-function: var(--ease-standard-slow-effects);
   transition-duration: var(--duration-standard-slow-effects, 300ms);
 }
