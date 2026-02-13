@@ -10,7 +10,7 @@
  *   --md-sys-color-primary: #your-color;
  *   --md-ref-typeface-brand: "Your Font", sans-serif;
  * }
- * @import "@vira/material-design-css";
+ * @import "material-design-css";
  */
 
 @layer md-config {

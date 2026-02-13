@@ -1,5 +1,5 @@
 /**
- * @vira/material-design-css - A Configurable Material Design 3 CSS Library
+ * material-design-css - A Configurable Material Design 3 CSS Library
  * 
  * Main Entry Point for TailwindCSS v4
  * 
@@ -10,11 +10,11 @@
  *   --md-config-color-primary-light: #your-color;
  *   --md-config-typeface-brand: "Your Font", sans-serif;
  * }
- * @import "@vira/material-design-css";
+ * @import "material-design-css";
  * 
  * Or import modules individually:
- * @import "@vira/material-design-css/config";
- * @import "@vira/material-design-css/color/tailwind-theme.css";
+ * @import "material-design-css/config";
+ * @import "material-design-css/color/tailwind-theme.css";
  */
 
 @layer theme, md-config, md-resolver, md-prebuild, base, components, utilities;
@@ -262,12 +262,12 @@
  * Optional Imports (not included by default):
  *
  * Color Presets (pick one to override the default palette):
- *   @import "@vira/material-design-css/prebuild-color/blue.css";
- *   @import "@vira/material-design-css/prebuild-color/green.css";
- *   @import "@vira/material-design-css/prebuild-color/pink.css";
- *   @import "@vira/material-design-css/prebuild-color/yellow.css";
- *   @import "@vira/material-design-css/prebuild-color/light-green.css";
+ *   @import "material-design-css/prebuild-color/blue.css";
+ *   @import "material-design-css/prebuild-color/green.css";
+ *   @import "material-design-css/prebuild-color/pink.css";
+ *   @import "material-design-css/prebuild-color/yellow.css";
+ *   @import "material-design-css/prebuild-color/light-green.css";
  *
  * Classic (non-Tailwind) Color Utilities:
- *   @import "@vira/material-design-css/color/classic-utilities.css";
+ *   @import "material-design-css/color/classic-utilities.css";
  * ============================================ */
