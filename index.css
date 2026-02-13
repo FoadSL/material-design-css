@@ -17,7 +17,7 @@
  * @import "@vira/material-design-css/color/tailwind-theme.css";
  */
 
-@layer theme, md-config, md-resolver, base, components, utilities;
+@layer theme, md-config, md-resolver, md-prebuild, base, components, utilities;
 
 /* Load configuration (defaults + resolver) */
 @import "./config/index.css";

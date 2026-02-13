@@ -2,7 +2,7 @@
  * Light Green Color Scheme Preset
  * Import this file to apply a light green primary color theme
  */
-@layer material-design-system.color.variable {
+@layer md-prebuild {
   :root {
     --md-sys-color-primary-palette-key-color: light-dark(#388647, #388647);
     --md-sys-color-secondary-palette-key-color: light-dark(#697c68, #697c68);

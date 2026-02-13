@@ -2,7 +2,7 @@
  * Pink Color Scheme Preset
  * Import this file to apply a pink primary color theme
  */
-@layer material-design-system.color.variable {
+@layer md-prebuild {
   :root {
     --md-sys-color-primary-palette-key-color: light-dark(#ab616d, #ab616d);
     --md-sys-color-secondary-palette-key-color: light-dark(#906e72, #906e72);

@@ -2,7 +2,7 @@
  * Blue Color Scheme Preset
  * Import this file to apply a blue primary color theme
  */
-@layer material-design-system.color.variable {
+@layer md-prebuild {
   :root {
     --md-sys-color-primary-palette-key-color: light-dark(#377f9d, #377f9d);
     --md-sys-color-secondary-palette-key-color: light-dark(#667a85, #667a85);
