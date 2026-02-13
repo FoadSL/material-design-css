@@ -102,6 +102,12 @@
 @import "./size/tailwind-theme.css";
 
 /* ============================================
+ * Scrollbar Utilities
+ * scrollbar-thin, scrollbar-hidden, scrollbar-auto
+ * ============================================ */
+@import "./utilities/scrollbar.css";
+
+/* ============================================
  * Base Styles
  * ============================================ */
 @layer base {
