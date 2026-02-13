@@ -100,6 +100,12 @@
 @import "./spacing/tailwind-theme.css";
 
 /* ============================================
+ * Stroke (Border Width) Tokens
+ * border-stroke-narrow, border-stroke-medium, etc.
+ * ============================================ */
+@import "./stroke/tailwind-theme.css";
+
+/* ============================================
  * Base Styles
  * ============================================ */
 @layer base {

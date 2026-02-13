@@ -805,5 +805,15 @@
      * MD3 4px grid base unit
      * ============================================ */
     --md-sys-spacing-unit: var(--md-config-spacing-unit, 4px);
+
+    /* ============================================
+     * Stroke (Border Width) Tokens
+     * Standardized border-width scale
+     * ============================================ */
+    --md-sys-stroke-narrow: var(--md-config-stroke-narrow, 1px);
+    --md-sys-stroke-semi-narrow: var(--md-config-stroke-semi-narrow, 1.5px);
+    --md-sys-stroke-medium: var(--md-config-stroke-medium, 2px);
+    --md-sys-stroke-thick: var(--md-config-stroke-thick, 4px);
+    --md-sys-stroke-heavy: var(--md-config-stroke-heavy, 10px);
   }
 }

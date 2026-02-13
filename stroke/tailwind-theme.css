@@ -1,0 +1,17 @@
+/**
+ * Material Design 3 Stroke (Border Width) Tokens for TailwindCSS v4
+ *
+ * Standardized border-width scale based on production SCSS design system.
+ * Prevents arbitrary border widths across teams.
+ *
+ * Configurable via --md-config-stroke-* variables.
+ * Usage: border-stroke-narrow, border-stroke-medium, border-t-stroke-thick, etc.
+ */
+
+@theme inline {
+  --border-width-stroke-narrow: var(--md-sys-stroke-narrow, 1px);
+  --border-width-stroke-semi-narrow: var(--md-sys-stroke-semi-narrow, 1.5px);
+  --border-width-stroke-medium: var(--md-sys-stroke-medium, 2px);
+  --border-width-stroke-thick: var(--md-sys-stroke-thick, 4px);
+  --border-width-stroke-heavy: var(--md-sys-stroke-heavy, 10px);
+}
